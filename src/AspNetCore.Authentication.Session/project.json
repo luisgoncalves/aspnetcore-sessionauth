@@ -1,0 +1,37 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Session-based authentication middleware for ASP.NET Core",
+  "authors": [ "Luís Gonçalves" ],
+
+  "buildOptions": {
+    "xmlDoc": true,
+    //"warningsAsErrors": true,
+    "additionalArguments": [
+      "/ruleset:../Main.ruleset",
+      "/additionalfile:../stylecop.json"
+    ]
+  },
+
+  "packOptions": {
+    "tags": [
+      "aspnetcore",
+      "session",
+      "authentication"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/luisgoncalves/aspnetcore-sessionauth.git"
+    },
+    "projectUrl": "https://github.com/luisgoncalves/aspnetcore-sessionauth"
+  },
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Authentication": "1.0.1",
+    "Microsoft.AspNetCore.Session": "1.0.1"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {},
+    "net451": {}
+  }
+}
